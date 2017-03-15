@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>NotaQL Dashboard</title>
+      <link rel="stylesheet" href="$replace$basepath$/replace$css/lib/jquery-ui.css">
+      <link rel="stylesheet" href="$replace$basepath$/replace$css/main.css">
+      
+      <script src="$replace$basepath$/replace$js/lib/jquery/jquery.js"></script>
+      <script src="$replace$basepath$/replace$js/lib/jquery/jquery-ui.js"></script>
+      <script src="$replace$basepath$/replace$js/lib/jquery/jquery.base64.js"></script>
+      
+      <script>
+            var REQUEST_URL = "$replace$basepath$/replace$to_server";
+            var POLLING_URL = "$replace$basepath$/replace$from_server";
+      </script>
+   </head>
+   <body>
+      <div id="nav">
+         <ul>
+            <li><a href="#" id="buttonAddEngine">+Engine</a></li>
+            <ul class="right">
+               <li><a href="#" id="buttonConfiguration">Konfiguration</a></li>
+               <li><a href="#" id="buttonKillAll">Stoppen</a></li>
+               <li><a href="#" id="buttonStore">Speichern</a></li>
+               <li><a href="#" id="buttonLoad">Laden</a></li>
+            </ul>
+         </ul>
+      </div>
+      
+      <svg id="svg" width="100%" height="100%"></svg>    
+      
+      <script src="$replace$basepath$/replace$js/dashboard.js"></script>
+   </body>
+</html>
